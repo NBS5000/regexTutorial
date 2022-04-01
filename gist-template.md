@@ -10,7 +10,11 @@ The function of the regex I'll be going through is this:
 
 > /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-No, my child didn't decide to play *work* on my laptop. It actually makes sense, and it checks the formatting of emails. I know it works, because I copied and pasted it into one of my projects and it works. It isn't the finest example of regex, nor does it guarantee that an email address is valid, just that its basic structure meets the basic string pattern we've stipulated. 
+No, my child didn't decide to play *work* on my laptop. It actually makes sense, and it checks the formatting of emails. I know it works, because I copied and pasted it into one of my projects and it works. It isn't the finest example of regex, nor does it guarantee that an email address is valid, just that its basic structure meets the super basic string pattern we've stipulated. 
+
+In the simplest terms, the above code is looking for a string that has:
+
+^[^\s@]
 
 ## Table of Contents
 
@@ -46,6 +50,13 @@ The order in which these are typed is important too, the ^ must be the first cha
  |  X$    | Will search for an 'X' at the end of the line |
  |  X^    | Will search for an 'X' anywhere in the line. |
  |  $X    | Will also search for an 'X' anywhere in the line |
+
+In the example given at the [start](#summary), there are a number of anchors:
+
+
+    ^ asserts position at start of the string
+    $ asserts position at the end of the string
+
 
 
 ### Quantifiers
@@ -84,3 +95,22 @@ Grouping constructs is
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
+
+
+^ asserts position at start of the string
+Match a single character not present in the list below [^\s@]
++ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
+\s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+@ matches the character @ with index 6410 (4016 or 1008) literally (case sensitive)
+@ matches the character @ with index 6410 (4016 or 1008) literally (case sensitive)
+Match a single character not present in the list below [^\s@]
++ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
+\s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+@ matches the character @ with index 6410 (4016 or 1008) literally (case sensitive)
+\. matches the character . with index 4610 (2E16 or 568) literally (case sensitive)
+Match a single character not present in the list below [^\s@]
++ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
+\s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+@ matches the character @ with index 6410 (4016 or 1008) literally (case sensitive)
+$ asserts position at the end of the string, or before the line terminator right at the end of the string (if any)
