@@ -1,12 +1,16 @@
 # Regular Expressions
 
-Ah, Regular Expressions, the expressions used regularly that no one understands. The magic bit of code that looks like someone mashed their keyboard.
+Ah, Regular Expressions, the expressions used regularly that no one understands. The magic bit of code that looks like someone mashed their keyboard. Once you know what you're looking at, it does start to make sense. A bit like most other code, when you think about it. That said, most developers don't know how to write their own regex:
 
+![Google search of regex](./assets/images/google.png "Google search of regex")
+> 
 ## Summary
 
-/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+The function of the regex I'll be going through is this:
 
-checks email format
+> /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+No, my child didn't decide to play *work* on my laptop. It actually makes sense, and it checks the formatting of emails. I know it works, because I copied and pasted it into one of my projects and it works. Here you'll discover why.
 
 ## Table of Contents
 
