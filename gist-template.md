@@ -6,13 +6,13 @@ Ah, Regular Expressions, the expressions used regularly that no one understands.
  
 ## Summary
 
-The function of the regex I'll be going through is this:
+The regex I'll be going through is this:
 
 > ^[^\s@]+@[^\s@]+\.[^\s@]+$
 
-No, my child didn't decide to play *work* on my laptop. It actually makes sense, and it checks the formatting of emails. I know it works, because I copied and pasted it into one of my projects and it works. 
+No, my child didn't decide to play *work* on my laptop. It actually makes sense, and it checks the formatting of emails. I know it works, because I copied it from Google and pasted it into one of my projects and it works. 
 
-It isn't the finest example of regex, nor does it guarantee that an email address is valid, just that its basic structure meets the super basic string pattern we've stipulated. 
+It isn't the finest example of regex, nor does it guarantee that an email address is valid, just that its basic structure meets the super basic string pattern I've stipulated. 
 
 Breaking it down, the first part: ^[^\s@]
 
@@ -106,9 +106,11 @@ A quantifier is appended to a character, a character class, or a set and specifi
 
 ### Grouping Constructs
 ------------------------------------------------
-Grouping constructs allows you to combine a sequence of literals and pattern characters with a quantifier to find repeating or optional matches. 
+Grouping constructs delineate the sub-expressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do a number of things, including:
 
-There's not too much more to it than this, a grouped construct is a sub-expression within the regex.
+- Match a sub-expression that is repeated in the string
+
+- Apply a quantifier to a sub-expression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers](#quantifiers) above
 
 ### Bracket Expressions
 ------------------------------------------------
