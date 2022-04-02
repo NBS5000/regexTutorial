@@ -6,7 +6,7 @@ Ah, Regular Expressions, the expressions used regularly that no one understands.
  
 ## Summary
 
-The regex I'll be going through is this:
+The regex (cool sounding shorthand for Regular Expressions) I'll be going through is this:
 
 > ^[^\s@]+@[^\s@]+\.[^\s@]+$
 
@@ -14,7 +14,7 @@ No, my child didn't decide to play *work* on my laptop. It actually makes sense,
 
 It isn't the finest example of regex, nor does it guarantee that an email address is valid, just that its basic structure meets the super basic string pattern I've stipulated. 
 
-Breaking it down, the first part: ^[^\s@]
+To break it down:
 
 | Regex | Description |
 | :---: | :---- |
@@ -25,8 +25,6 @@ Breaking it down, the first part: ^[^\s@]
 | +\. | Then checks for a dot. As the dot is a special character, it needs to be escaped |
 | [^\s@] | No change in code = no change in description |
 | +$ | The end of the string |
-
-------------------------------------------------
 
 ![Cat coding](./assets/images/cat.jpg "Cat coding")
 
@@ -100,7 +98,9 @@ The simplest quantifier is a number in curly braces: {n}:
 
 For example, you can search for exactly 3 of the string '\x' by searching with \x{3}. This will match the string:
 
-    \x\x\x
+```
+\x\x\x
+```
 
 A quantifier is appended to a character, a character class, or a set and specifies how many we need.
 
@@ -116,7 +116,11 @@ Grouping constructs delineate the sub-expressions of a regular expression and ca
 ------------------------------------------------
 A bracket expression is a list of characters enclosed by [ and ]. It matches any single character in that list. If the first character of the list is ^, then it matches any character not in the list
 
-In the example above, the same grouping construct is used a few times: [^\s@]
+In the example above, the same expression is used a few times: 
+
+```
+[^\s@]
+```
 
 This grouping searches for characters that *aren't* whitespace characters (\s)or the @ character.
 
@@ -124,13 +128,23 @@ This grouping searches for characters that *aren't* whitespace characters (\s)or
 ------------------------------------------------
 Similar to the above, a character class matches any one of the enclosed characters. You can specify a range of characters by using a hyphen, but if the hyphen appears as the first or last character enclosed in the square brackets it is taken as a literal hyphen to be included in the character class as a normal character.
 
-For example [xyz] is the same as [x-z].
+For example 
+
+```
+[xyz]
+``` 
+is the same as 
+```
+[x-z]
+```
 
 ### The OR Operator
 ------------------------------------------------
 Much like OR operators in other languages and logical operators, the OR operator in regex works by searching for either one value or another. For example:
 
+```
 [K|C]+atherine 
+```
 
 will match to either Katherine or Catherine.
 
