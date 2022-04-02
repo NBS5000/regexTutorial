@@ -41,8 +41,8 @@ The end result is displayed to a Github Gist and publicly available and viewable
 * ~~GIVEN a regex tutorial~~
 * ~~WHEN I open the tutorial~~
 * ~~THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile~~
-* WHEN I click on the links in the table of contents
-* THEN I am taken to the corresponding sections of the tutorial
+* ~~WHEN I click on the links in the table of contents~~
+* ~~THEN I am taken to the corresponding sections of the tutorial~~
 * ~~WHEN I read through each section of the tutorial~~
 * ~~THEN I find a detailed explanation of what a specific component of the regex does~~
 * ~~WHEN I reach the end of the tutorial~~
@@ -52,19 +52,13 @@ The end result is displayed to a Github Gist and publicly available and viewable
 
 As the acceptance criteria has been met and the task is now complete. 
 
-You can view the Github repo here [HERE](https://github.com/NBS5000/noteTaker/)
+You can view the Github gist here [HERE](https://gist.github.com/NBS5000/73932a4289864f9ca10529dc7d867426)
 
-You can view the Heroku deployment [HERE](https://nbs-notetaker.herokuapp.com/)
+Alternatively, here is a screenshot:
 
-Alternatively, here are some screenshots:
-
-> ![The Note Taker landing page](./rmImages/landing.png "Screenshot of the Note Taker landing page")
-
-> ![A note on Note Taker](./rmImages/note.png "Screenshot of a note on Note Taker")
-
-> ![An unsaved note on Note Taker](./rmImages/unsaved.png "Screenshot of an unsaved note on Note Taker")
+> ![Screenshot of the Regex gist](./assets/images/screen.png "Screenshot of the Regex gist")
 
 ---
-<p style="text-align:center;">Written by <span style="font-style:italic">Steve Barry</span> - Due date 21/02/2022</p>
+<p style="text-align:center;">Written by <span style="font-style:italic">Steve Barry</span> - Due date 4/04/2022</p>
 
 <p style="text-align:center;">© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.</p>
